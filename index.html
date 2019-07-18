@@ -1,1 +1,180 @@
-teste!!
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        /* CSS RESET*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url()
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Anonymous Pro', monospace;
+            font-size: 16px;
+            line-height: 1.25;
+        }
+
+        /* Header */
+        .container>header {
+            background: #4a69bd;
+            display: flex;
+        }
+
+        .container>header img {
+            width: 6rem;
+            margin: .5rem 1rem .5rem .5rem;
+        }
+
+        .container>header a:nth-child(2) {
+            color: #38ada9;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container>header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1024PX;
+            margin: auto;
+        }
+
+        .container>footer {
+            display: flex;
+            justify-content: space-between;
+            background: #38ada9;
+
+            color: white;
+        }
+
+        .container>footer a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        .container>footer a:hover {
+            background: red;
+        }
+
+        .container>footer div {
+            padding: 1rem;
+        }
+
+        .container>nav {
+            background: #38ada9;
+        }
+
+        .container>nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: .5rem;
+        }
+
+        .container>nav a,
+        .dropdown {
+            display: inline-block;
+        }
+
+        .container>nav a:hover {
+            background-color: #4a69bd;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .droplinks a {
+            display: block;
+            white-space: nowrap;
+            text-align: right;
+        }
+        .droplinks {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a name="topo" id="topo"></a>
+    <div class="container">
+
+        <header>
+            <a href="index.html"><img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="VitorFrazao"></a>
+            <a href="index.html">
+                <h1>Vitor Frazão</h1>
+            </a>
+        </header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html">Artigos</a>
+            <a href="index.html">Contatos</a>
+            <div class="dropdown">
+                <a href="">Sobre</a>
+                <div class="droplinks">
+                    <a href="site.html">Sobre o Site</a>
+                    <a href="autor.html">Sobre o Autor</a>
+                    <a href="privacidade.html">Política de Privacidade</a>
+                </div>
+            </div>
+            <a href="index.html"></a>
+        </nav>
+        <main>
+            <section>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor efficitur pharetra. Praesent
+                    pharetra, felis vel ullamcorper finibus, lectus ante posuere leo, ac placerat nibh orci vel risus.
+                    Quisque eros mi, dapibus at elementum et, dictum eget ipsum. Mauris lobortis nisi augue, vitae
+                    gravida ligula convallis sed. Proin mattis convallis neque, sed fermentum ligula convallis sed.
+                    Vestibulum mattis eu nunc non placerat. Etiam vitae turpis lacinia, ultrices ante faucibus,
+                    placerat elit. Donec pretium magna ac placerat luctus. Suspendisse et elit augue. Aliquam cursus,
+                    mauris euismod luctus mollis, felis nisl aliquam turpis, vitae aliquam sapien justo et elit.</p>
+
+                <img src="https://picsum.photos/id/237/200/300" alt="imagem">
+
+                <p>Sed consectetur eros sed ipsum gravida, quis lobortis quam vestibulum. Quisque bibendum massa ut
+                    sapien accumsan vulputate. Nunc id mauris nunc. Donec eu accumsan ligula. Sed viverra tempor libero
+                    eget euismod. Sed volutpat turpis sed sem aliquet, vitae molestie lorem tempus. Nunc sed fermentum
+                    metus. Nulla nec gravida eros.</p>
+
+                <p> Proin eget mollis ex. Suspendisse ac porta lectus, non cursus turpis. Aenean ullamcorper et ex non
+                    tincidunt. In varius interdum pretium. Proin commodo metus luctus, fringilla est ut, dignissim
+                    dolor. Donec nec enim neque. Sed placerat cursus maximus.</p>
+            </section>
+            <aside>
+                <p> Proin eget mollis ex. Suspendisse ac porta lectus, non cursus turpis. Aenean ullamcorper et ex non
+                    tincidunt. In varius interdum pretium. Proin commodo metus luctus, fringilla est ut, dignissim
+                    dolor. Donec nec enim neque. Sed placerat cursus maximus.</p>
+            </aside>
+        </main>
+
+
+
+        <footer>
+            <a href="index.html">Inicio</a>
+            <div>&copy; Copyright 2019 Vitor Frazão.</div>
+            <a href="#topo">Topo</a>
+        </footer>
+    </div>
+</body>
+
+</html>
