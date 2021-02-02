@@ -4,8 +4,9 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /* font-family: sans-serif; */
 }
+
+/* Layout do nome, background, circulos e efeitos de glassmorphismo */
 
 body {
   width: 100%;
@@ -20,6 +21,7 @@ body {
   );
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: sans-serif;
 }
 
 header {
@@ -51,22 +53,21 @@ h1 {
   background-position: right;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-h1:hover{
-    background-position: left;
+h1:hover {
+  background-position: left;
 }
 
 .circ {
   position: absolute;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
 .quad {
   position: absolute;
-  background-color: white;
   border-radius: 20%;
 }
 .circulo1 {
@@ -74,11 +75,9 @@ h1:hover{
   height: 20rem;
   top: 8rem;
   right: 40rem;
-  background: linear-gradient(
-    to right,
-    #8d6aa591 20%,
-    #6aa5a591
-  );
+  background: linear-gradient(to right, #8d6aa591 20%, #6aa5a591);
+  animation: balancar 5s infinite;
+  animation-direction: alternate-reverse;
 }
 
 .circulo2 {
@@ -91,7 +90,8 @@ h1:hover{
     rgba(171, 120, 236, 0.562) 20%,
     rgba(171, 120, 236, 0.562)
   );
-  backdrop-filter: blur(1rem);
+  animation: balancar 5s infinite;
+  animation-direction: alternate;
 }
 
 .circulo3 {
@@ -101,4 +101,58 @@ h1:hover{
   right: 70rem;
   background-color: rgba(133, 64, 224, 0.562);
   backdrop-filter: blur(1rem);
+  animation: balancar 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes balancar {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 50px);
+  }
+}
+
+/* Layout do nav e dropdow */
+
+nav {
+  z-index: 50;
+}
+nav,
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  z-index: 50;
+}
+
+nav ul li {
+  margin-right: 3rem;
+  cursor: pointer;
+  z-index: 51;
+  background: linear-gradient(
+    to right,
+    rgba(16, 56, 235, 0.363),
+    rgba(37, 164, 223, 0.1)
+  );
+  backdrop-filter: blur(0.2rem);
+  border-radius: 1rem;
+  box-shadow: -15px 15px 20px 0px #0a227640;
+  padding: 1rem;
+}
+nav ul li:hover {
+ 
+}
+
+nav ul li a {
+  color: #4a2eeb;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.dropDown {
+  display: none;
 }
