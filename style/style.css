@@ -1,3 +1,7 @@
+:root{
+  --branco-transparente: linear-gradient(rgba(255, 255, 255, 0.1),rgb(255, 255, 255,0.1));
+}
+
 * {
   margin: 0px;
   padding: 0;
@@ -25,6 +29,7 @@ body {
 }
 
 header {
+  background: var(--branco-transparente);
   display: flex;
   position: relative;
   justify-content: center;
@@ -37,7 +42,6 @@ header {
   width: 60rem;
   height: 5rem;
   font-family: "Fira Sans", sans-serif;
-  background: rgb(234 104 132, 0%);
   backdrop-filter: blur(0.5rem);
   box-shadow: -10px 10px 32px 0 rgb(7 10 97 / 20%);
   z-index: 10;
@@ -62,7 +66,6 @@ h1:hover {
 
 .circ {
   position: absolute;
-  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -90,7 +93,7 @@ h1:hover {
     rgba(171, 120, 236, 0.562) 20%,
     rgba(171, 120, 236, 0.562)
   );
-  animation: balancar 5s infinite;
+  animation: balancar 3s infinite;
   animation-direction: alternate;
 }
 
@@ -119,38 +122,36 @@ h1:hover {
 nav {
   z-index: 50;
 }
-nav,
-ul {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
-  z-index: 50;
+  z-index: 99;
 }
 
 nav ul li {
   margin-right: 3rem;
-  cursor: pointer;
   z-index: 51;
-  background: linear-gradient(
-    to right,
-    rgba(16, 56, 235, 0.363),
-    rgba(37, 164, 223, 0.1)
-  );
-  backdrop-filter: blur(0.2rem);
+  backdrop-filter: blur(.5rem);
   border-radius: 1rem;
   box-shadow: -15px 15px 20px 0px #0a227640;
-  padding: 1rem;
+  padding: 1rem 0;
+  transition: 1s;
+  background: var(--branco-transparente);
 }
-nav ul li:hover {
- 
-}
-
 nav ul li a {
   color: #4a2eeb;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 0.1rem;
   font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 1s;
+  
+}
+nav ul li:hover{
+  background: rgba(255, 255, 255, 0.466);
 }
 
 .dropDown {
