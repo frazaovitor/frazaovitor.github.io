@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /* font-family: sans-serif; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at top right,
+    #f2b75c 2%,
+    #fc6a60 5%,
+    #b862e6 20%,
+    #6098fc 55%,
+    #a4f5d7 95%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 5rem;
+  font-size: 30px;
+  width: 60rem;
+  height: 5rem;
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(234 104 132, 0%);
+  backdrop-filter: blur(0.5rem);
+  box-shadow: -10px 10px 32px 0 rgb(7 10 97 / 20%);
+  z-index: 10;
+}
+
+h1 {
+  background-image: radial-gradient(
+    circle at top left,
+    #624cdf 25%,
+    #82f7cc 80%
+  );
+  background-size: 300%;
+  background-position: right;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .5s;
+}
+
+h1:hover{
+    background-position: left;
+}
+
+.circ {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.quad {
+  position: absolute;
+  background-color: white;
+  border-radius: 20%;
+}
+.circulo1 {
+  width: 20rem;
+  height: 20rem;
+  top: 8rem;
+  right: 40rem;
+  background: linear-gradient(
+    to right,
+    #8d6aa591 20%,
+    #6aa5a591
+  );
+}
+
+.circulo2 {
+  width: 10rem;
+  height: 10rem;
+  top: 3rem;
+  right: 27rem;
+  background: linear-gradient(
+    to right,
+    rgba(171, 120, 236, 0.562) 20%,
+    rgba(171, 120, 236, 0.562)
+  );
+  backdrop-filter: blur(1rem);
+}
+
+.circulo3 {
+  width: 5rem;
+  height: 5rem;
+  top: 3rem;
+  right: 70rem;
+  background-color: rgba(133, 64, 224, 0.562);
+  backdrop-filter: blur(1rem);
+}
