@@ -57,11 +57,17 @@ h1 {
   background-position: right;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s;
+  animation-name: background;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
 }
 
-h1:hover {
-  background-position: left;
+@keyframes background {
+  0% {background-position: right;}
+  25% {background-position: left;}
+  50% {background-position: left;}
+  100% {background-position: right;}
 }
 
 .circ {
