@@ -1,3 +1,12 @@
+$backgroundColor: #d3d3d3;
+$fontBranca: #d3d3d3;
+$botoes: #f9f9f9;
+$azulEscuro: #4990e3;
+$azulClaro: #a9c8f7;
+$verde: #00ae9c;
+
+$links: #0063ff;
+
 html,
 body,
 div,
@@ -86,7 +95,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -101,21 +109,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,17 +127,16 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
   text-decoration: none;
-  color: #0063ff;
+  color: $links;
 }
 
+// reset tamanho da fonte
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -147,12 +150,14 @@ a {
 }
 
 /* Layout do nome, background, circulos e efeitos de glassmorphismo */
+
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #d3d3d3;
+  background-color: $backgroundColor;
   background-repeat: no-repeat;
   background-size: cover;
+
   font-family: "Meera Inimai", sans-serif;
 }
 
@@ -161,100 +166,85 @@ header {
   font-weight: 600;
   text-align: center;
   letter-spacing: 0.1rem;
-  color: #d3d3d3;
-  background-color: #4990e3;
+
+  color: $fontBranca;
+  background-color: $azulEscuro;
   width: 100vw;
   height: 7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+
   border-radius: 50% 50% 50% 50% / 0% 0% 20% 20%;
-}
 
-header img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 5rem;
-  border: 1px solid #a9c8f7;
-  padding: 0.1rem;
-}
+  img {
+    width: 5rem;
+    height: 5rem;
 
-header #perfil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    border-radius: 5rem;
+    border: 1px solid $azulClaro;
+
+    padding: 0.1rem;
+  }
+
+  #perfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 nav {
   width: 100vw;
   height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-nav #redeSocial {
-  width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+
+  #redeSocial {
+    width: 90vw;
+
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 main {
   width: 100vw;
   margin: 2rem 0;
-  display: -ms-grid;
+
   display: grid;
   justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
+  align-content: center;
+  grid-template-columns: 2fr 2fr;
   row-gap: 2rem;
-}
 
-main section {
-  width: 9rem;
-  height: 9rem;
-  border-radius: 0.75rem;
-  background-color: #f9f9f9;
-  text-align: center;
-  font-weight: 600;
-  color: #0063ff;
-  -webkit-box-shadow: 5px 5px 20px -7px #a9c8f7;
-          box-shadow: 5px 5px 20px -7px #a9c8f7;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  row-gap: 0.5rem;
-}
+  section {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.75rem;
+    background-color: $botoes;
 
-main section .container {
-  width: 80%;
+    text-align: center;
+    font-weight: 600;
+    color: $links;
+
+    box-shadow: 5px 5px 20px -7px #a9c8f7;
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 0.5rem;
+
+    .container{
+        width: 80%;
+    }
+  }
 }
 
 footer {
   height: 5rem;
-  background-color: #00ae9c;
+  background-color: $verde;
 }
-/*# sourceMappingURL=style.css.map */
