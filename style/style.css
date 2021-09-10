@@ -220,7 +220,7 @@ nav #redeSocial {
 
 main {
   width: 100vw;
-  margin: 2rem 0;
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -254,6 +254,7 @@ main section .container {
 }
 
 footer {
+  margin-top: 1.5rem;
   height: 5rem;
   background-color: #00ae9c;
 }

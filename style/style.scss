@@ -213,7 +213,7 @@ nav {
 
 main {
   width: 100vw;
-  margin: 2rem 0;
+  margin-top: 2rem;
 
   display: grid;
   justify-items: center;
@@ -245,6 +245,7 @@ main {
 }
 
 footer {
+  margin-top: 1.5rem;
   height: 5rem;
   background-color: $verde;
 }
