@@ -221,36 +221,47 @@ nav #redeSocial {
 main {
   width: 100vw;
   margin-top: 2rem;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   row-gap: 2rem;
 }
 
 main section {
-  width: 9rem;
-  height: 9rem;
-  border-radius: 0.75rem;
-  background-color: #f9f9f9;
-  text-align: center;
-  font-weight: 600;
-  color: #0063ff;
-  -webkit-box-shadow: 5px 5px 20px -7px #a9c8f7;
-          box-shadow: 5px 5px 20px -7px #a9c8f7;
   display: -ms-grid;
   display: grid;
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  row-gap: 0.5rem;
 }
 
-main section .container {
-  width: 80%;
+main section a {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 0.75rem;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 5px 5px 20px -7px #a9c8f7;
+          box-shadow: 5px 5px 20px -7px #a9c8f7;
+  text-align: center;
+  font-weight: 600;
+  color: #0063ff;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 0.25rem;
+}
+
+main section a .container {
+  width: 90%;
 }
 
 footer {
