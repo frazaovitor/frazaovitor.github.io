@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -146,7 +147,7 @@ a {
   }
 }
 
-/* Layout do nome, background, circulos e efeitos de glassmorphismo */
+/* CSS começa aqui */
 body {
   width: 100vw;
   height: 100vh;
@@ -265,8 +266,33 @@ main section a .container {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1.5rem;
   height: 5rem;
   background-color: #00ae9c;
+  color: #f9f9f9;
+}
+
+footer h2 {
+  margin-left: 1rem;
+  font-size: 1.15rem;
+}
+
+footer .topo {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 1.5rem 2rem;
+  background-color: #4990e3;
 }
 /*# sourceMappingURL=style.css.map */

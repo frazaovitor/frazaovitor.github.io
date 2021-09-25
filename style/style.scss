@@ -149,7 +149,7 @@ a {
   }
 }
 
-/* Layout do nome, background, circulos e efeitos de glassmorphismo */
+/* CSS começa aqui */
 
 body {
   width: 100vw;
@@ -250,7 +250,28 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin-top: 1.5rem;
   height: 5rem;
   background-color: $verde;
+
+  color: $botoes;
+
+  h2{
+    margin-left: 1rem;
+    font-size: 1.15rem;
+  }
+
+  .topo {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+
+    padding: 1.5rem 2rem;
+
+    background-color: $azulEscuro;
+  }
 }
