@@ -137,6 +137,7 @@ a {
 }
 
 // reset tamanho da fonte
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -213,41 +214,50 @@ nav {
 
 main {
   width: 100vw;
+  min-height: 20.1rem;
   margin-top: 2rem;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 2rem;
+  #containerPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
 
-  section {
-    display: grid;
-    justify-items: center;
-    align-content: center;
-
-    a {
-      width: 9rem;
-      height: 9rem;
-      border-radius: 0.75rem;
-      background-color: $botoes;
-      box-shadow: 5px 5px 20px -7px #a9c8f7;
-
-      text-align: center;
-      font-weight: 600;
-      color: $links;
-
+    section {
       display: grid;
       justify-items: center;
       align-content: center;
-      row-gap: 0.25rem;
 
-      .container {
-        width: 90%;
+      a {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 0.75rem;
+        background-color: $botoes;
+        box-shadow: 5px 5px 20px -7px #a9c8f7;
+
+        text-align: center;
+        font-weight: 600;
+        color: $links;
+
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        row-gap: 0.25rem;
+
+        .container {
+          pointer-events: none;
+          width: 90%;
+        }
       }
     }
   }
 }
+
+.displayNone{
+  display: none;
+}
+
 
 footer {
   display: flex;
@@ -260,7 +270,7 @@ footer {
 
   color: $botoes;
 
-  h2{
+  h2 {
     margin-left: 1rem;
     font-size: 1.15rem;
   }
@@ -270,7 +280,7 @@ footer {
     justify-items: center;
     align-content: center;
 
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
 
     background-color: $azulEscuro;
   }

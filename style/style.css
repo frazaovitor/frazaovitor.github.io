@@ -221,7 +221,11 @@ nav #redeSocial {
 
 main {
   width: 100vw;
+  min-height: 20.1rem;
   margin-top: 2rem;
+}
+
+main #containerPrincipal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +239,7 @@ main {
   row-gap: 2rem;
 }
 
-main section {
+main #containerPrincipal section {
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -243,7 +247,7 @@ main section {
       align-content: center;
 }
 
-main section a {
+main #containerPrincipal section a {
   width: 9rem;
   height: 9rem;
   border-radius: 0.75rem;
@@ -261,8 +265,13 @@ main section a {
   row-gap: 0.25rem;
 }
 
-main section a .container {
+main #containerPrincipal section a .container {
+  pointer-events: none;
   width: 90%;
+}
+
+.displayNone {
+  display: none;
 }
 
 footer {
@@ -292,7 +301,7 @@ footer .topo {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   background-color: #4990e3;
 }
 /*# sourceMappingURL=style.css.map */
