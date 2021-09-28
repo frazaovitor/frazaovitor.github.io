@@ -268,6 +268,12 @@ main #containerPrincipal section a {
 main #containerPrincipal section a .container {
   pointer-events: none;
   width: 90%;
+  min-height: 6.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  justify-items: center;
 }
 
 .displayNone {

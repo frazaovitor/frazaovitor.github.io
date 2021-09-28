@@ -248,6 +248,11 @@ main {
         .container {
           pointer-events: none;
           width: 90%;
+          min-height: 6.5rem;
+
+          display: grid;
+          align-content: space-between;
+          justify-items: center;
         }
       }
     }
