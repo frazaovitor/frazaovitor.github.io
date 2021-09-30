@@ -1,11 +1,13 @@
 $backgroundColor: #d3d3d3;
-$fontBranca: #d3d3d3;
-$botoes: #f9f9f9;
-$azulEscuro: #4990e3;
-$azulClaro: #a9c8f7;
-$verde: #00ae9c;
 
-$links: #0063ff;
+$fontBranca: #d3d3d3;
+$branco: #f9f9f9;
+
+$azulEscuro: #0063ff;
+$azulMedio: #4990e3;
+$azulClaro: #a9c8f7;
+
+$verde: #00ae9c;
 
 html,
 body,
@@ -136,6 +138,10 @@ a {
   color: $links;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 // reset tamanho da fonte
 
 @media (max-width: 1080px) {
@@ -169,7 +175,7 @@ header {
   letter-spacing: 0.1rem;
 
   color: $fontBranca;
-  background-color: $azulEscuro;
+  background-color: $azulMedio;
   width: 100vw;
   height: 7rem;
 
@@ -233,7 +239,7 @@ main {
         width: 9rem;
         height: 9rem;
         border-radius: 0.75rem;
-        background-color: $botoes;
+        background-color: $branco;
         box-shadow: 5px 5px 20px -7px #a9c8f7;
 
         text-align: center;
@@ -248,7 +254,7 @@ main {
         .container {
           pointer-events: none;
           width: 90%;
-          min-height: 6.5rem;
+          min-height: 5rem;
 
           display: grid;
           align-content: space-between;
@@ -257,12 +263,47 @@ main {
       }
     }
   }
+
+  .containerSecundario {
+    background: linear-gradient(90deg, $azulMedio 10%, $azulClaro 10%);
+
+    display: grid;
+    justify-items: right;
+    align-content: center;
+    row-gap: .25rem;
+
+    width: 100vw;
+
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+
+    section {
+      width: 88%;
+      min-height: 13rem;
+
+      .descricoes {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0.5rem;
+
+        .branco {
+          color: $branco;
+        }
+
+        .azul {
+          color: $azulEscuro;
+          text-align: right;
+        }
+      }
+    }
+  }
 }
 
-.displayNone{
+.displayNone {
   display: none;
 }
-
 
 footer {
   display: flex;
@@ -273,7 +314,7 @@ footer {
   height: 5rem;
   background-color: $verde;
 
-  color: $botoes;
+  color: $branco;
 
   h2 {
     margin-left: 1rem;
@@ -287,6 +328,6 @@ footer {
 
     padding: 1.5rem 1rem;
 
-    background-color: $azulEscuro;
+    background-color: $azulMedio;
   }
 }

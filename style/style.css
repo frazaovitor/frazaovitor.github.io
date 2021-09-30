@@ -135,6 +135,10 @@ a {
   color: #0063ff;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -268,12 +272,51 @@ main #containerPrincipal section a {
 main #containerPrincipal section a .container {
   pointer-events: none;
   width: 90%;
-  min-height: 6.5rem;
+  min-height: 5rem;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: justify;
       align-content: space-between;
   justify-items: center;
+}
+
+main .containerSecundario {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #4990e3), color-stop(10%, #a9c8f7));
+  background: linear-gradient(90deg, #4990e3 10%, #a9c8f7 10%);
+  display: -ms-grid;
+  display: grid;
+  justify-items: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: .25rem;
+  width: 100vw;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+main .containerSecundario section {
+  width: 88%;
+  min-height: 13rem;
+}
+
+main .containerSecundario section .descricoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem;
+}
+
+main .containerSecundario section .descricoes .branco {
+  color: #f9f9f9;
+}
+
+main .containerSecundario section .descricoes .azul {
+  color: #0063ff;
+  text-align: right;
 }
 
 .displayNone {
