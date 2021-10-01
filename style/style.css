@@ -312,11 +312,13 @@ main .containerSecundario section .descricoes {
 
 main .containerSecundario section .descricoes .branco {
   color: #f9f9f9;
+  width: 8rem;
 }
 
 main .containerSecundario section .descricoes .azul {
   color: #0063ff;
-  text-align: right;
+  text-align: center;
+  width: 11rem;
 }
 
 .displayNone {
